@@ -15,14 +15,19 @@ int main () {
       printf("\n");
     printf("%x\t",(ap+i));
     //imprime el valor de la dirección del elemento mostrado usando el ap e i
-  }
-  printf("\n")
-  for (int i = 0; i < 3 ; i++){
+    } 
+    printf("\n");
+  
+  
+
+  printf("\n");
+    for(int i = 0; i < 3 ; i++){
     for(int j = 0; j< 3; j++){
-      printf("%x\t",(ap+i*3+j), *(ap+i*3+j));
-      //imprime el valor de la dirección del elemento mostrado usando el ap, i y j
+      printf("%x\t%d\t",(ap+i*3+j), *(ap+i*3+j));
+      //imprime el valor de la dirección y el valor del elemento mostrado usando el ap, i y j
     }
     printf("\n");
   }
   return 0;
 }
+    
